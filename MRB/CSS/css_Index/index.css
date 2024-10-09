@@ -1,0 +1,620 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   min-height: 100%;
+   background-image: url(/MRB/IMAGE/Background.jpg) ;
+   cursor: auto;    
+}
+.cocosinero-img{
+    height: 280px;
+    width: auto;
+    filter: contrast(100%);
+    position: absolute;
+}
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.663);
+    border-bottom: 2px solid rgb(139, 138, 137);
+    backdrop-filter: blur(4px);
+}   
+.navList{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 180px;
+    text-shadow: 1px 1px 3px rgb(255, 254, 254);
+}
+
+.navList li .homeAct{
+    color: rgb(233, 90, 50);
+}
+
+.navList a{
+    color:white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 20px 20px;
+    display: fixed;
+    flex-grow: 1;
+    letter-spacing: 2px;
+}
+
+.navList a:hover{
+    background-color: rgba(225, 176, 0, 0.351);
+    padding: 30px 20px;
+}
+header h1{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:40px;
+    font-weight: 700;
+    font-size: 38px;
+    text-shadow: -1px -2px 5px rgb(255, 254, 254);
+}
+header h1 a{
+    color: rgb(233, 90, 50);
+}
+
+.btn-navList{
+    display: none;
+    background-color: rgb(4, 4, 4);
+}
+
+/* Content of The page for Home*/
+
+.img-al-fresko{
+    padding-top: 0;
+    background-repeat: no-repeat;
+    height: 88.5vh;
+    width:100%;
+    /* display: fixed; */
+}
+
+#page-info{
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    position: absolute;
+    top: 58%;
+    left:10%;
+    margin-left: -100px ;
+}
+
+.page-message{
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    padding:0;
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    font-size: 38px;
+    margin-left: 20px;
+}
+
+#head-text{
+    color: white;
+    text-shadow: 4px 0 rgb(233, 90, 50);
+}
+#head-text p{
+    text-align: justify;
+    align-items: right;
+    padding: 24px;
+    font-size: 36px;
+    font-size: 'Rubik', sans-serif;
+    font-weight: 900;
+}
+
+/* welcome-home div*/
+
+
+.welcome-mess .img-welcome{
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 45px;
+    margin-right: 85px;
+    height: 70vh;
+    width: 48%;
+    object-fit: cover;
+}
+
+.img-welcome{
+    animation: slideup 1.20s ease forwards 1.20s;
+    opacity: 0;
+}
+
+.welcome-in {
+        width: 37%;
+        margin-top: 23px;
+        margin-bottom: 40%;
+        margin-left: 55.5%;
+        position: absolute;
+        height: 120px;
+        top: 102vh;
+        margin-right: 7%;
+        padding: 2%;
+        animation: slideup 1.40s ease forwards 1.40s;
+        opacity: 0;
+        display: block;
+}
+
+.welcome-in h4{
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 0;
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.welcome-in h1{
+    color: rgb(233, 90, 50);
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-bottom: 5%;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.welcome-in p{  
+    padding-top: 50%;
+    margin-top: 50%;
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    margin-left: 10px;
+    margin-bottom: 150px;
+    color:white;
+    font-size: 24px;
+}
+
+.welcome-in a{
+    color: white;
+    padding: 18px;
+    border:none;
+    background-color:rgb(233, 90, 50);
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-shadow: -1px -2px 5px rgb(60, 60, 60);
+    margin-left: 20px;
+}
+
+.welcome-in a:hover{
+   background-color:rgba(97, 97, 97, 0.821)
+}
+
+
+/* menu-bar div*/
+
+.menu-sample{
+    min-height: 100%;
+    margin-left: 3%;
+    height: 50vh;
+    width: 48%;
+    margin-bottom: 5%;
+    animation: slideup 2s ease forwards 2s;
+    opacity: 0;
+    object-fit:cover;
+}
+
+.menu-in{
+    color: white;
+    width: 36%;
+    height: 40vh;
+    padding-top: 50px;
+    position: absolute;
+    top: 189vh;
+    margin-left: 59%;
+    padding: 20px;
+    animation: slideup 2s ease-in forwards 2.50s;
+    opacity: 0;
+}
+
+.menu-in h1{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 5px;
+    font-size:  40px;
+    padding-top: 43px;
+}
+
+.menu-in p{
+    font-size: 24px;
+    margin-bottom: 95px;
+    margin-top: 5px;
+}
+
+.menu-in a{
+    color: white;
+    padding: 18px;
+    border:none;
+    background-color:rgb(233, 90, 50);
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-shadow: -1px -2px 5px rgb(60, 60, 60);
+    margin-left: 61%;
+}
+
+.menu-in a:hover{
+    background-color:rgba(97, 97, 97, 0.821)
+}
+
+
+/*footer-div*/
+
+.footer-all-div{
+    background: linear-gradient(to left,black, rgb(1, 1, 1));
+    color: white;
+    max-width: 100%;
+    height:40vh;
+    text-align: center;
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+
+/* Cocosinero Footer*/
+
+.footer-home{
+    width: 100%;
+}
+.footer-home a{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    margin-left: -5%;
+    cursor: pointer;
+    
+}
+
+.hours-div{
+    margin-left: -5%;
+    font-size: 1.50em;
+    padding: 5px;
+    text-align: center;
+}
+
+.openHrs-div{
+    text-align: center;
+    font-size: 1em;
+    margin-left: -5%;
+}
+
+.nav-loc-hour{
+    padding-top: 10px;
+    text-align: center;
+    margin-left: -5%;
+}
+
+.nav-loc-hour a{
+    color: rgb(255, 255, 255);
+}
+
+.nav-loc-hour a:hover{
+    color: rgb(233, 90, 10);
+}
+/* Cocosinero Site Map of Website*/
+.footer-nav-map{
+    padding: 0;
+    text-align: center;
+    top:259vh;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: -0.5%;
+}
+
+.footer-nav-map .site-map{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.footer-nav-map a{
+    color: white;
+    display: flex;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 4px;
+}
+
+.footer-nav-map a:hover{
+    color: rgb(233, 90, 10);
+}
+
+/* Cocosinero Social Media Links*/
+
+.footer-social{
+    padding: 5px;
+    text-align: center;
+    top:257.5vh;
+    position: absolute;
+    margin-left: 82%;
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    margin-top: -0.5%;
+}
+
+.footer-social a{
+    color: rgb(24, 3, 255);
+    margin-right: 68px;
+    font-size: 24px;
+}
+
+.footer-social a:hover{
+    color: rgb(14, 92, 169);
+}
+
+.qualityfoods{
+    top: 273vh;
+    position: absolute;
+    margin-left: 82.5%;
+    text-align: justify;
+}
+
+.footer-copyRight{
+    top: 294vh;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.footer-copyRight a{
+    color: rgb(233, 90, 10);
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+
+@keyframes slideup {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px){
+
+    header{
+        width: 100%;
+    }
+
+    .cocosinero-img{
+        height: 250px;
+        width: auto;
+        filter: contrast(100%);
+        margin-right: 56px;
+        margin-top: 0;
+    }
+
+    .navList{
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: 64.7%;
+        width: 34%;
+        height: 0;
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: max(1.5rem, 6vmin);
+        border-radius: 10px;
+        padding-left: 0;
+        top:90px;
+        right: 0;
+        background-color: rgba(82, 82, 82, 0.595);
+        box-shadow: 1px 1px 10px orange;
+        transition: all 1s ease;
+    }
+
+    .navList a{
+        font-size: 20px;
+    }
+
+
+    .btn-navList{
+        display: block;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        font-size: 30px;
+        width: 250px;
+    }
+
+
+    header h1{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin:40px;
+        font-weight: 700;
+        font-size: 30px;
+        text-shadow: -1px -2px 5px rgb(255, 254, 254);
+    }
+    header h1 a{
+        color: rgb(233, 90, 50);
+    }
+
+    .img-al-fresko{
+        width: 100%;
+    }
+    
+    .welcome-mess .img-welcome{
+        opacity: 0;
+        border-radius: 20px;
+        height: 60vh;
+        width: 45%;
+    }
+    .img-welcome{
+        margin: auto;
+        box-shadow: 1px 1px 10px orange;
+    }
+
+    #page-info{
+        margin-top:-6%;
+        margin-left: -7%;
+    }
+
+    .welcome-in{
+        margin-top: -10%;
+        margin-left: 52%;
+    }
+
+    .welcome-in h4{
+        display: none;
+    }
+
+    .welcome-in h1{
+        margin-top: 60%;
+        font-size: 40px;
+        font-family: 'Rubik', sans-serif;
+    }
+    .welcome-in a{
+        margin-top: -40%;
+        margin-left: 20px;
+    }
+    .welcome-in p{
+        margin-top: -5%;
+        margin-bottom: 10%;
+        line-height: 25px;
+        display: flex;
+        text-align: left;
+        font-size: 20px;
+    }
+    .welcome-mess{
+        width: 100%;
+    }
+
+    .menu-sample{
+        margin-left: 45%;
+        border-radius:20px;
+        height: 60vh;
+        width: 50%;
+        box-shadow: 1px 1px 10px orange;
+    }
+
+    .menu-in{
+        margin-left: 2%;
+    }
+
+    .menu-in h1{
+        margin: 10px;
+        margin-top: -19%;
+    }
+
+    .menu-in p{
+        margin-left: 5px;
+        font-size:18px;
+        margin-bottom: 40px;
+    }
+
+    .menu-in a{
+        margin-left: 4%;
+    }
+
+    .site-map{
+        margin-top: 7px;
+    }
+    .footer-home{
+        margin-top: -7px;
+        margin-left: 13%;
+        width: 70%;
+    }
+    
+    .hours-div{
+        margin-left: -7%;
+
+    }
+    
+    .openHrs-div{
+        text-align: center;
+        margin-left: -7%;
+    }
+    
+    .nav-loc-hour{
+        padding-top: 10px;
+        text-align: center;
+        margin-left: -6%;
+    }
+    .qualityfoods{
+        margin-left: 70%;
+        margin-top: 22px;
+    }
+    
+    .footer-copyRight{
+        margin-top: 5px;
+        margin-left: 20%;
+    }
+
+    .footer-all-div{
+        margin-top: 20px;
+        background: linear-gradient(to left,black, rgb(1, 1, 1));
+        color: white;
+        max-width: 129.5%;
+        height:40vh;
+        text-align: center;
+        border-top: 1px solid;
+    }
+
+    .footer-social{
+        margin-left: 68%;
+    }
+
+    .footer-nav-map .site-map{
+        margin-top: 2px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    
+}

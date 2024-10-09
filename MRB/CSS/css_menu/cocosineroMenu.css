@@ -1,0 +1,1679 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   min-height: 100%;
+   background-image: url(/MRB/IMAGE/Background.jpg);
+   cursor: auto;
+}
+
+
+.icon-coco img{
+    width: 40px;
+    display: flex;
+    height: 49px;
+    margin-left: 30px;
+    color: rgb(233, 90, 50);
+}
+
+/* Header */
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    right:0;
+    top: 0;
+    z-index: 1000;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.663);
+    border-bottom: 2px solid rgb(139, 138, 137);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    width: 100%;
+}   
+.navList{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 180px;
+    text-shadow: 1px 1px 3px rgb(255, 254, 254);
+}
+
+.navList li .menuAct{
+    color: rgb(233, 90, 50);
+}
+
+.navList a{
+    color:white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 20px 20px;
+    display: fixed;
+    flex-grow: 1;
+    letter-spacing: 2px;
+    
+}
+
+.navList a:hover{
+    background-color: rgba(225, 176, 0, 0.351);
+    padding: 30px 20px;
+}
+
+header h1{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:40px;
+    font-weight: 700;
+    font-size: 38px;
+    text-shadow: -1px -2px 5px rgb(255, 254, 254);
+}
+header h1 a{
+    color: rgb(233, 90, 50);
+}
+
+.btn-navList{
+    display: none;
+    background-color: rgb(4, 4, 4);
+}
+
+/*Main menu*/
+.menu-navList{
+    display: flex;
+    margin-left: 390px;
+    text-shadow: 1px 1px 3px rgb(255, 254, 254);
+    margin-top: 10%;
+}
+
+.menu-navList a{
+    color:white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color:rgb(233, 90, 50);
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding: 4px 4px;
+    line-height: 50px; 
+ 
+}
+
+.menu-navList a:hover{
+    padding: 4px 4px;
+    background: linear-gradient(to right, orange,orange,rgb(0, 0, 0));
+}
+
+/*Start for menu navigation*/
+.h1menu{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+p{
+    text-align: center;
+    margin: 20px;
+    display: block;
+    font-size: 1em;
+    color: white;
+    margin-bottom:40px;
+}
+
+.menu-nav{
+    color: white;
+    padding: 18px;
+    border:none;
+    background-color:rgb(233, 90, 50);
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-shadow: -1px -2px 5px rgb(60, 60, 60);
+    margin-left:47.5%;
+    margin-bottom: 100% ;
+}
+
+.menu-nav:hover{
+    background-color:rgba(97, 97, 97, 0.821)
+}
+
+/*Container for the section*/
+.menu-container{
+    font-size: 40px;
+    color: rgb(233, 90, 50);;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    min-width: 100%;
+}
+
+.menu-container h1{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: -2%;
+    margin-top: 5%;
+}
+
+
+/* Item for ricemeal*/
+
+.rice-meal{
+    position: absolute;
+
+}
+
+.rice-meal-menu img{
+    max-width: 100%;
+    height: 50vh;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.rm-item{
+    display: flex;
+    margin-left: 120px;
+    width: 85%;
+}
+
+.rm-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+}
+
+.rm-items{
+    font-size: 24px;
+    margin-left: 4%;
+    margin-top: -30px;
+}
+
+.leg-items{
+    font-size: 24px;
+    margin-left: 7%;
+    margin-top: -30px;
+}
+
+.grilled-img{
+    width: 25%;
+    height: 80px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.grilled-item{
+    font-size: 24px;
+    margin-left: 14%;
+    margin-top: -30px;
+}
+
+.ala-img{
+    margin-left: 40px;
+    width: 25%;
+    margin-top: 8%;
+}
+
+.ala-item{
+    font-size: 24px;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+
+.rm-price{
+    display: flex;
+    margin-bottom: -10%;
+    color: rgb(233, 90, 50);
+}
+
+h6{
+    margin-left: 17%;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 100px
+}
+
+.pitso-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 11%;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -50px;
+    text-transform: uppercase;
+}
+
+.leg-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 10%;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -50px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.gchix-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left:12%;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -50px;
+    text-transform: uppercase;
+}
+
+.ala-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 350px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -50px;
+    text-transform: uppercase;
+}
+
+.cs-items{
+    font-size: 24px;
+    margin-left: 9%;
+    margin-top: -30px;
+}
+
+.cs-price{
+    color: rgb(233, 90, 50);
+    margin-top: -30px;
+    margin-left: 17%;
+}
+
+.gp-item{
+    font-size: 24px;
+    margin-left: 21%;
+    margin-top: -30px;
+}
+
+.gp-price{
+    color: rgb(233, 90, 50);
+    margin-left: 28%;
+    margin-top: -30px;
+}
+
+.l-item{
+    font-size: 24px;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+
+.l-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 25%;
+    margin-top: -30px;
+}
+
+.sps-items{
+    font-size: 24px;
+    margin-left: 6%;
+    margin-top: -30px;
+}
+
+.sps-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 20%;
+    margin-top: -30px;
+}
+
+.cal-item{
+    font-size: 24px;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+
+.cal-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 26%;
+    margin-top: -30px;
+}
+
+.pchop-item{
+    font-size: 24px;
+    margin-left: 20%;
+    margin-top: -30px;
+}
+
+.pchop-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 25%;
+    margin-top: -30px;
+}
+
+.ff-items{
+    font-size: 24px;
+    margin-left: 12%;
+    margin-top: -30px;
+}
+
+.ff-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 20%;
+    margin-top: -30px;
+}
+
+.fc-item{
+    font-size: 24px;
+    margin-left: 21%;
+    margin-top: -30px;
+}
+
+.fc-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 26%;
+    margin-top: -30px;
+}
+
+.cb-item{
+    font-size: 24px;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+
+.cb-price{
+    color: rgb(233, 90, 50);    
+    margin-left: 25%;
+    margin-top: -30px;
+}
+
+/*Best Seller*/
+
+.menu-best-seller{
+    font-size: 40px;
+    color: rgb(233, 90, 50);;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    min-width: 100%;
+}
+
+.menu-best-seller h1{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+/*Best-seller menu*/
+
+.bseller{
+    position: absolute;
+    top: 18vh;
+}
+
+.bs-menu img{
+    max-width: 100%;
+    height: 45vh;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 10%;
+}
+
+.bs-item{
+    display: flex;
+    margin-left: 120px;
+    width: 85%;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.akb-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 9%;
+    margin-top: 25%;
+}
+
+.akb-items{
+    font-size: 24px;
+    margin-left: 7%;
+    margin-top: -25px;
+}
+
+.sbb-img{
+    width: 25%;
+    height: 70px;
+    font-size: 30px;
+    margin-left: 40px;
+    object-fit: cover;
+    clip: 50px;
+}
+
+.sbb-item{
+    font-size: 24px;
+    margin-left: 13%;
+    margin-top: -30px;
+}
+
+.lb-img{
+    margin-left: 40px;
+    width: 25%;
+    object-fit: cover;
+}
+
+.lb-item{
+    font-size: 24px;
+    margin-left: 13%;
+    margin-top: -30px;
+}
+
+.bs-price{
+    display: flex;
+    margin-bottom: -10%;
+    color: rgb(233, 90, 50);
+}
+.akb-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left:18.3%;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -60px;
+    text-transform: uppercase;
+}
+
+.sbb-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 340px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -60px;
+    text-transform: uppercase;
+}
+
+.lavab-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 335px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -60px;
+    text-transform: uppercase;
+}
+
+.fo-img{
+    margin-top: 8%;
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+.fo-items{
+    font-size: 24px;
+    margin-left: 27.5%;
+    margin-top: -30px;
+}
+
+.fo-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 36%;
+    margin-bottom: 7%;
+}
+
+.fp-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 2%; 
+}
+
+.fp-item{
+    font-size: 24px;
+    margin-left: 17%;
+    margin-top: -30px;
+}
+
+.fp-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 24.3%;
+}
+
+.bar-item{
+    display: flex;
+    margin-left: 120px;
+    width: 85%;
+    font-weight: 700;
+    margin-top: 50px;      
+    text-transform: uppercase;
+}
+
+.bar-items{
+    font-size: 24px;
+    margin-left: 22%;
+    margin-top: -10px;
+    line-height: 2em;
+}
+
+.bar-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+
+.bars-items{
+    font-size: 24px;
+    margin-left: 22%;
+    margin-top: -150px;
+    line-height: 2em;
+}
+
+.bars-price{
+    color: rgb(233, 90, 50);
+    margin-top: -100px;
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+
+.fams-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 18%;
+    display: flex;
+}
+
+.fam-item{
+    font-size: 24px;
+    margin-left: 22%;
+    margin-top: -10px;
+    line-height: 2em;
+}
+
+.fam-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+
+.fams-item{
+    font-size: 24px;
+    margin-left: 24.6%;
+    margin-top: -150px;
+    line-height: 2em;
+}
+
+.famss-price{
+    color: rgb(233, 90, 50);
+    margin-top: -100px;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+
+/*Bilao Menu*/
+
+.menu-bilao{    
+    font-size: 40px;
+    color: rgb(233, 90, 50);;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+    text-transform: uppercase;
+    min-width: 100%;
+    margin-bottom: 15%;
+}
+
+.menu-bilao h1{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: -3%;
+    margin-top: -7%;
+}
+
+.bilao-menu{
+    position: absolute;
+}
+
+.bilao-size-menu img{
+    height: 45vh;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 10%;
+    margin-top: 8%;
+}
+
+.spag-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 17%;
+    margin-top: 25%;
+    object-fit: cover;
+}
+
+.spag-item{
+    font-size: 28px;
+    margin-right: 90%;
+    margin-top: -20px;
+    text-align: justify;
+    border-bottom: 1px solid;
+    width: 97%;
+}
+
+.carb-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-top: 25%;
+    object-fit: cover;
+}
+
+.spag-title{
+    font-size: 28px;
+    margin-right: 40%;
+    margin-top: -30px;
+}
+
+.carb-title{
+    font-size: 28px;
+    margin-left: 20%;
+    margin-top: -85px;
+}
+
+.pg-title{
+    font-size: 28px;
+    margin-left: 75%;
+    margin-top: -80px;
+}
+
+.carb-item{
+    font-size: 28px;
+    margin-right: 90%;
+    margin-top: -30px;
+    text-align: justify;
+    border-bottom: 1px solid;
+    width: 97%;
+}
+
+.pg-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-top: 25%;
+    object-fit: cover;
+}
+
+.pg-item{
+    font-size: 28px;
+    margin-right: 90%;
+    margin-top: -30px;
+    text-align: justify;
+    border-bottom: 1px solid;
+    width: 97%;
+}
+
+.spag-price{
+    padding: 20px;
+    margin-left: 410px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -125px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+.carb-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 340px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -125px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+.pg-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 330px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -125px;
+    text-transform: uppercase;
+    line-height: 80px;
+
+}
+
+.pab-img{
+    margin-right: 5%;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 23%;
+    margin-top: -5%;
+}
+
+.pab-title{
+    font-size: 28px;
+    margin-left: 18%;
+    margin-top: -85px;
+}
+
+.pab-price{
+    padding: 20px;
+    border-radius: 10%;
+    margin-left: 840px;
+    color: white;
+    font-size: 20px;
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    text-align: center;
+    margin-top: -125px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+#gsetti{
+    margin-left: 27%;
+    margin-right: 13px;
+}
+
+#stanghon{
+    margin-left: 27%;
+    margin-right: 3px;
+}
+
+#mhon{
+    margin-left: 27%;
+    margin-right: 10px;
+}
+/*Sizzling-Menu*/
+
+.sizz-menu{
+    position: absolute;
+    top:807vh;
+}
+
+.hg-img{
+    margin-right: 0;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 18%;
+}
+
+.hg-items{
+    font-size: 24px;
+    margin-left: 9%;
+    margin-top: -30px;
+}
+
+.bchix-item{
+    font-size: 24px;
+    margin-left: 22%;
+    margin-top: -30px;
+}
+
+.lmpo-item{
+    font-size: 24px;
+    margin-left: 21%;
+    margin-top: -30px;
+}
+
+.salis-item{
+    font-size: 24px;
+    margin-left: 30%;
+    margin-top: -40px;
+}
+
+.porchop-item{
+    font-size: 24px;
+    margin-left: 20%;
+    margin-top: -40px;
+}
+
+.hg-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 18%;
+    margin-right:6% ;
+    text-transform: uppercase;
+}
+
+.bchix-price{
+    color: rgb(233, 90, 50);
+    margin-top: -40px;
+    margin-left: 22%;
+    margin-right:2%;
+    text-transform: uppercase;
+    
+}
+
+/*Chef Special Soup*/
+.lomi-house{
+    font-size: 40px;
+    color: rgb(233, 90, 50);;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    min-width: 100%;
+    position: absolute
+}
+
+.lomi-menu{
+    position: absolute;
+    top: -200vh;
+}
+
+.lomi-house h1{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+    margin-top: 110%;
+}
+
+.chef-header{
+    display: flex;
+    margin-bottom: -10%;
+    color: rgb(233, 90, 50);
+    margin-top: 24%;
+    margin-left: 20%; 
+}
+
+.chef-header h3{
+    color: rgb(233, 90, 50);
+    padding: 20px;
+    margin-left:-20%;
+    margin-right:20%
+}
+
+.chef-header h4{
+    color: rgb(233, 90, 50);
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.solo-title{
+    margin-right: 10%;
+}
+
+.chef-lomi-menu{
+    margin-top: 11%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.chef-lomi-menu p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid;
+}
+
+.chef-lomi-solo{
+    text-align: justify;
+    margin-top: -31%;
+    line-height: 50px;
+    text-align: center;
+}
+.chef-lomi-solo h6{
+    color: rgb(233, 90, 50);
+    margin-top: -5%;
+    margin-left: 21%;
+    text-transform: uppercase;
+}
+.chef-lomi-platter{
+    text-align: left;
+    margin-top: -32.7%;
+    margin-left: 84%;
+    line-height: 30px;
+    margin-bottom: -10%;
+}
+
+.chef-lomi-platter h6{
+    color:  rgb(233, 90, 50);
+    line-height: 5px;
+    margin-bottom: 29%;
+    text-align: center;
+    margin-right: 55%;
+    text-transform: uppercase;
+}
+
+.Laksa{
+    margin-top:-28vh;
+}
+
+.chef-laksa-menu{
+    margin-top: 11%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.chef-laksa-menu p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid;
+}
+.chef-laksa-presyo{
+    margin-top: -15%;
+}
+
+.chef-laksa-presyo h6{
+    color: rgb(233, 90, 50);
+    margin-top: -4%;
+    margin-left: 21%;
+    text-transform: uppercase;
+}
+.chef-tkutso{
+    color: rgb(233, 90, 50);
+    padding: 20px;
+    margin-left: -60%;
+    margin-top: 8%;
+    margin-bottom: -9%;
+}
+
+.chef-tkutso-menu{
+    margin-top: 11%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.chef-tkutso-menu p{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid;
+}
+.chef-tkutso-presyo{
+    margin-top: -5%;
+}
+
+.chef-tkutso-presyo h6{
+    color: rgb(233, 90, 50);
+    margin-top: -4%;
+    margin-left: 21%;
+    text-transform: uppercase;
+}
+
+
+/*footer-div*/
+
+.footer-all-div{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    top: 250vh;
+    height:40vh;
+    border-top: 1px solid;
+    position: relative;
+}
+
+/* Cocosinero Footer*/
+
+.footer-home a{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 624px;
+    position: absolute;
+    margin-top: 0.2%;
+    cursor: pointer;
+}
+
+.hours-div{
+    position: absolute;
+    margin-left: 41.5%;
+    font-size: 1.50em;
+    padding: 5px;
+    margin-top: 3%;
+}
+
+.openHrs-div{
+    text-align: center;
+    margin-left: 42%;
+    font-size: 1em;
+    position: absolute;
+    margin-top:6% ;
+}
+
+.nav-loc-hour{
+    padding-top: 10px;
+    position: absolute;
+    margin-left: 39%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.nav-loc-hour a{
+    color: rgb(255, 255, 255);
+}
+
+.nav-loc-hour a:hover{
+    color: rgb(233, 90, 10);
+}
+/* Cocosinero Site Map of Website*/
+.footer-nav-map{
+    padding: 5px;
+    text-align: center;
+    top:-0.2vh;
+    position: absolute;
+    margin-left: 2%;
+}
+
+.footer-nav-map .site-map{
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.footer-nav-map a{
+    color: white;
+    display: flex;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 4px;
+}
+
+.footer-nav-map a:hover{
+    color: rgb(233, 90, 10);
+}
+
+/* Cocosinero Social Media Links*/
+
+.footer-social{
+    padding: 5px;
+    text-align: center;
+    top:-1.3vh;
+    position: absolute;
+    margin-left: 82%;
+    text-shadow: -1px 4px 5px rgba(3, 3, 3, 0.752);
+    color: rgb(233, 90, 50);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+}
+
+.footer-social a{
+    color: rgb(24, 3, 255);
+    margin-right: 78px;
+}
+
+.footer-social a:hover{
+    color: rgb(14, 92, 169);
+}
+
+.qualityfoods{
+    top: 16vh;
+    position: absolute;
+    margin-left: 82.5%;
+}
+
+.footer-copyRight{
+    top: 36vh;
+    position: absolute;
+    margin-left: 37%;
+}
+
+.footer-copyRight a{
+    color: rgb(233, 90, 10);
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+/* Tablet Size */
+@media (max-width:768px){
+
+    header{
+        width: 100%;
+        background-color: black;
+    }
+
+    .navList{
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        left: 64.7%;
+        width: 34%;
+        height: 0;
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: max(1.5rem, 6vmin);
+        border-radius: 10px;
+        top:90px;
+        background-color: rgba(82, 82, 82, 0.595);
+        box-shadow: 1px 1px 10px orange;
+        transition: all 1s ease;
+    }
+
+    .navList a{
+        font-size: 20px;
+    }
+
+
+    .btn-navList{
+        display: block;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        font-size: 30px;
+        width: 250px;
+    }
+
+
+    header h1{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin:40px;
+        font-weight: 700;
+        font-size: 30px;
+        text-shadow: -1px -2px 5px rgb(255, 254, 254);
+    }
+    header h1 a{
+        color: rgb(233, 90, 50);
+    }
+    /*Menu Changes*/
+    .menu-navList{
+        margin-top: 15vh;
+        margin-left: 15%;
+    }
+
+    .menu-navList a{
+        font-size: 15px;
+    }
+    /* ricemeal */
+    .rice-meal-menu img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20%;
+    }
+
+
+    .rm-items,.leg-items,.gp-item
+    ,.cal-item,.pchop-item
+    ,.ff-items,.cb-item{
+        font-size: 20px;
+    }
+    .fc-item{
+        font-size: 20px;
+        margin-left: 137px;
+        margin-right:45px;
+
+    }
+    .sps-price{
+        margin-left: 180px;
+        margin-right: -10px;
+    }
+
+    .sps-items{
+        font-size: 20px;
+        margin-left: 87px;
+        margin-right: 35px;
+    }
+
+    .cs-price{
+        margin-left: 180px;
+        margin-right: -40px;
+    }
+
+    .cs-items{
+        font-size: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .l-item{
+        font-size: 20px;
+        margin-left: 270px;
+    }
+
+    .gp-item{
+        margin-left: 100px;
+        margin-right: -100px;
+    }
+    .grilled-item{
+        font-size: 20px;
+        margin-left: 70px; 
+        margin-right: 100px;
+    }
+    .ala-item{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: -30px;
+    }
+
+    .rm-item{
+        margin-left: 10px;
+    }
+
+    .rm-price{
+        margin-left: -80px;
+    }
+
+    .pitso-price{
+        font-size: 20px;
+    }
+
+    .leg-price{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+
+    .gchix-price{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+
+    .ala-price{
+        font-size: 20px;
+        margin-left: 150px;
+    }
+
+
+    /* Best Seller */
+
+    .menu-best-seller h1 {
+        margin-left: 20%;
+        margin-bottom: 20%;
+        margin-top: 7%;
+    }
+
+    .bs-menu{
+        margin-top: 10%;
+    }
+
+    .bs-menu img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20%;
+        margin-left: 50px; 
+        margin-right: -10px;
+    }
+
+    .lb-item,
+    .fp-item,
+    .fams-item{
+        font-size: 20px;
+    }
+
+    .sbb-item{
+        margin-left: 100px;
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    .akb-items{
+        margin-left: 80px;
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    .akb-price{
+        margin-top: 90px;
+        font-size: 20px;
+        margin-left:10%;
+        margin-right: -40%;
+    }
+    .sbb-price{
+        margin-top: 90px;
+        font-size: 20px;
+        margin-left: 500px;
+    }
+    .lavab-price{
+        margin-left: 160px;
+        margin-top: 90px;
+    }
+
+    .fo-items{
+       font-size: 20px; 
+       margin-left: 187px;
+       margin-right: 6px;
+    }
+
+    .bar-items{
+        font-size: 20px;
+        margin-left: 77px;
+    }
+    .bar-price{
+        margin-left: 200px;
+    }
+
+    .bars-items{
+        font-size: 20px;
+        margin-left: 77px;
+    }
+
+    .bars-price{
+        margin-left: 200px;
+    }
+
+    .fam-item{
+        font-size: 20px;
+        margin-left:137px;
+    }
+
+    .fam-price{
+        margin-left:227px;
+    }
+
+    .famss-price{
+        margin-left:220px;
+    }
+    /*Bilao Menu */
+
+    .menu-bilao h1{
+        margin-top: -90px;
+    }
+
+    .menu-bilao img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20%;
+        margin-left: 50px; 
+        margin-right: -10px;
+    }
+
+    .spag-title{
+        font-size: 20px;
+        margin-left: -120px;
+    }
+
+    .carb-title{
+        font-size: 20px;
+        margin-top: -70px;
+        margin-left: 90px;
+    }
+    
+    .pg-title{
+        font-size: 20px;
+        margin-top: -70px;
+    }
+
+
+    .spag-item,
+    .carb-item,.pg-item{
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .bs-price{
+        margin-top: -150px;
+    }
+    .spag-price{
+        margin-left: 120px;
+        line-height: 27vh;
+    }
+
+    .pg-price{
+        margin-left: 140px;
+        line-height: 27vh;
+    }
+    #gsetti{
+        margin-left: 130px;
+        line-height: 27vh;
+    }
+
+    #mhon{
+        margin-left: 130px;
+        line-height: 27vh;
+    }
+    #stanghon{
+        margin-left: 130px;
+        line-height: 27vh;
+    }
+
+
+    .carb-price{
+        margin-left: 160px;
+        line-height: 27vh;
+    }
+
+    .pab-price{
+        margin-left: 360px;
+        line-height: 27vh;
+    }
+
+    .pab-title{
+        font-size: 20px;
+        margin-left: 80px;
+    }
+    /*Sizzling*/
+
+    .menu-best-seller .sizz-menu{
+        top:765vh;
+    }
+
+    .hg-items{
+        margin-left: 50px;
+        margin-right: -20px;
+    }
+
+    .hg-price,.bchix-price{
+        margin-top: 120px;
+        margin-left: 120px;
+        margin-right: 70px;
+    }
+
+    #lmpo-price{
+        margin-top: 100px;
+        margin-left: 120px;
+        margin-right: 70px;
+    }
+    .salis-item,.porchop-item{
+        margin-left: 210px;
+        margin-right: -90px;
+    }
+
+    .fo-price,.fp-price{
+        margin-top: 120px;
+        margin-left: 250px;
+        margin-right: -30px;
+    }
+
+    .bs-item{
+        margin-left: 10px;
+    }
+    /* Lomi*/
+    .lomi-menu{
+        top: -105vh;
+        font-size: 1.4em;
+        width: 100px
+    }
+
+    .lomi-house h1{
+        margin-top: 105vh;
+    }
+    .chef-header{
+        margin-top: 500px;
+    }
+
+    .chef-header h3, .chef-header h4{
+        font-size: 20px;
+    }
+
+    .chef-lomi-menu p{
+        font-size: 15px;
+    }
+
+    .chef-lomi-solo{
+        margin-top: -55vh;
+        line-height: 4px;
+    }
+    .chef-lomi-platter{
+        margin-top: -56%;
+    }
+    .chef-lomi-platter h6{
+        margin-top: 52%;
+        margin-left: -10px;
+        margin-bottom: 10%;
+        line-height: 2px;
+    }
+
+    .Laksa{
+        margin-top: -50%;
+    }
+
+    .chef-laksa-presyo{
+        margin-top: -30%;
+        line-height: 10px;
+    }
+    .chef-laksa-menu p{
+        font-size: 15px;
+    }
+    .chef-tkutso{
+        font-size: 18px;
+    }
+    .chef-tkutso-menu p{
+        font-size: 15px;
+    }
+
+    .chef-tkutso-presyo{
+        margin-top: -10%;
+    }
+    /*Footer*/
+    .site-map{
+        margin-top: 7px;
+    }
+    .footer-home{
+        margin-top: -2px;
+        margin-left: -50%;
+        width: 70px;
+    }
+    
+    .hours-div{
+        margin-top: 30px;
+        margin-left: 37%;
+
+    }
+    
+    .openHrs-div{
+        text-align: center;
+        margin-left: 37%;
+        margin-top: 80px;
+    }
+    
+    .nav-loc-hour{
+        padding-top: 70px;
+        text-align: center;
+        margin-left: 32%;
+    }
+    .qualityfoods{
+        margin-left: 70%;
+        margin-top: 22px;
+        text-align: left;
+    }
+    
+    .footer-copyRight{
+        margin-top: 5px;
+        margin-left: 20%;
+    }
+
+    .footer-all-div{
+        background: linear-gradient(to left,black, rgb(1, 1, 1));
+        color: white;
+        max-width: 129.5%;
+        height:41vh;
+        text-align: center;
+        border-top: 1px solid;
+        margin-top: 040%;
+    }
+
+    .footer-social{
+        font-size: 22px;
+        margin-left: 69%;
+    }
+
+    .footer-nav-map .site-map{
+        margin-top: 2px;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
