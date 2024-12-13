@@ -1,0 +1,1281 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight:500 ;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Completely hidden at the start */
+    transform: translateY(20px); /* Slight slide-in effect */
+  }
+  100% {
+    opacity: 1; /* Fully visible at the end */
+    transform: translateY(0); /* Back to original position */
+  }
+}
+
+/* Apply animation with default styling */
+.animate-on-scroll {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial offset */
+  animation: fadeIn 1.5s ease-in-out; /* Smoother animation */
+  animation-delay: var(--animation-delay, 0s); /* Allow customizable delays */
+  animation-fill-mode: forwards; /* Ensure final state is retained */
+  visibility: hidden; /* Hidden until animation starts */
+}
+
+/* Make it visible when scrolled into view */
+.animate-on-scroll.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Return to normal position */
+  visibility: visible; /* Ensure visibility */
+}
+html {
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+#navigation {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navigation li {
+    letter-spacing: 7px;
+    padding: 0.5em;
+}
+
+#navigation li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+#navigation li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: darkcyan;
+    box-shadow: 1px 1px 7px darkcyan;
+    transition: width 0.9s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+#navigation li a:hover::after {
+    width: 100%;
+}
+
+#navigation li a:hover {
+    color: darkcyan;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px; /* Ensure the icon is large enough */
+    color: white; /* Match your design */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    position: relative; /* Add positioning if necessary */
+}
+
+/* Burger Icon */
+/*.burger-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+*/
+/* Responsive Styles */
+
+/*	End Of Header	*/
+
+/*Start of home*/
+body{
+	align-items: flex-start;
+		justify-content: left;
+		display: flex;
+		background: linear-gradient(to top,darkcyan, black);
+		color: white;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+}
+
+#home{
+	position: relative;
+	top: 4em;
+}
+
+#portfolio {
+	left:20em;
+	text-align: left;
+    font-size: 2em;
+    flex-wrap: wrap;
+    width: auto;
+    position: relative;
+    top: 2em;
+    color: white;
+
+
+}
+
+
+#portfolio {
+
+    font-size: 2em;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    width: auto;
+    position: relative;
+    top: 2em;
+    color: white;
+
+}
+
+
+		.container{
+			height: 0em;
+			width: auto;
+			grid-area: auto;
+
+		}
+
+#picture{
+		background: linear-gradient(to bottom,darkcyan, black);
+			width: 40em;height: 35em;
+			border-top-right-radius: 4em;
+			border-top-left-radius: 20em;
+			border-bottom-right-radius: 10em;
+			border-bottom-left-radius: 30em;
+			position: relative;
+			left: 5em;
+			top:2em;
+			 box-shadow: 0 4px 20px rgba(0, 0, 0, 1);	
+		}
+
+	#imgProfile{
+			flex-wrap: wrap;
+			position: relative;
+			width: 40em;height: 35em;
+			left: 14em;
+			bottom:10em;	
+/*				 box-shadow: 0 4px 20px rgba(255, 255, 255, 1);		*/
+		}
+#button{	
+	cursor: pointer;
+			border-style: inset;
+			padding: 2em;
+			margin: 1em;
+			width: 15em;
+			border-radius: 1em;
+			position: relative ;
+			top:7em;
+			text-transform: uppercase;
+			font-weight: 300;
+			left: 12.5em;
+			color: white;
+background: linear-gradient(to right,darkcyan, black);
+
+		}
+
+		#picture, #button{
+			position: relative;
+			flex-wrap: wrap;
+		}
+
+		#wrap{
+			flex-wrap: wrap;
+			position: relative;
+			left: 59em;
+			bottom: 32em;
+			word-break: keep-all;
+			width: 30em;
+            font-family: "Castoro Titling", serif;
+		}
+
+		#item{
+			margin-left: 3em;
+			position: relative;
+    			display: inline-grid;
+			height: 15em;
+			width: 15em;
+			top: 25em;
+			border-style: outset;
+			border-radius: 1em;
+			text-transform: uppercase;
+			font-weight: 300;
+			left: 47.5em;
+			color: black;
+background: linear-gradient(to right,darkcyan, black);
+		}
+
+.img-home{
+
+	display: flex;
+	left: 2em;
+	top: 2em;
+	position: relative;
+
+}
+
+#coding{
+	height: 10em;
+	width: 10em;
+			border-radius: 10%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth zoom and shadow */
+}
+
+#coding:hover {
+    transform: scale(1.2); /* Increases size to 120% */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.8); /* Enhances shadow on hover */
+}
+
+
+#facebook{
+		height: 10em;
+	width: 10em;
+		border-radius: 10%;
+	   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth zoom and shadow */
+}
+
+#facebook:hover {
+    transform: scale(1.2); /* Increases size to 120% */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.8); /* Enhances shadow on hover */
+}
+
+#github{
+		height: 10em;
+	width: 10em;
+		border-radius: 10%;
+   transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth zoom and shadow */
+}
+
+#github:hover {
+    transform: scale(1.2); /* Increases size to 120% */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.8); /* Enhances shadow on hover */
+}
+
+
+
+
+/*MAX WIDTH 1440PX*/
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+
+    /* Adjust styles for smaller laptop screens */
+
+    #portfolio {
+        flex-direction: column;
+        font-size: 44px;
+        left: 48vw; /* Changed from 12em to vw */
+        text-align: center;
+    }
+
+    #picture {
+        flex-direction: column;
+        left: 2vw; /* Changed from 2em to vw */
+        background: linear-gradient(to bottom, darkcyan, black);
+        width: 40vw; /* Changed from 25em to vw */
+        height: 45vh; /* Changed from 20em to vh */
+        border-top-right-radius: 4vw; /* Changed from 4em to vw */
+        border-top-left-radius: 20vw; /* Changed from 20em to vw */
+        border-bottom-right-radius: 10vw; /* Changed from 10em to vw */
+        border-bottom-left-radius: 30vw; /* Changed from 30em to vw */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    }
+
+    #imgProfile {
+        left: 14vw; /* Changed from 8em to vw */
+        width: 20vw; /* Changed from 20em to vw */
+        height: 44vh; /* Changed from 24em to vh */
+        bottom:12vw;
+    }
+
+    #home {
+        height: 110vh;
+    }
+
+    .buttons {
+        /* Add styles if needed */
+    }
+
+    #button {
+        position: relative;
+        left: 30vw; /* Changed from 24em to vw */
+        margin-top: 20vh; /* Changed from 100px to vh */
+        width: 20vw; /* Changed from 200px to vw */
+        text-align: center;
+        justify-content: center;
+    }
+
+    #wrap {
+        flex-wrap: wrap;
+        font-size: 20px;
+        left: 47vw; /* Changed from 25em to vw */
+        width: 45vw; /* Changed from 20em to vh */
+        bottom:58vh;
+    }
+
+    #item {
+        left: 44vw; /* Changed from 30em to vw */
+        margin: 0px 5px;
+        height: 11em; /* Kept as em for height */
+        width: 11em; /* Kept as em for width */
+        top: 52vh; /* Changed from 18em to vh */
+    }
+
+    #item .img-home {
+        display: inline-grid;
+        width: 10vw; /* Changed from 8em to vw */
+        border-radius: 1em; /* Kept as em for border radius */
+        text-transform: uppercase;
+        left:30px; /* Kept as px for positioning */
+        top: 12px; /* Kept as px for positioning */
+        height: 130px; /* Kept as px for height */
+        position: relative;
+        padding: 0;
+    }
+
+    /* About */
+    #about {
+        margin-top: 5em; /* Kept as em for margin */
+    }
+
+    #about .img-about {
+        flex-direction: column;
+        height: 42vh;
+        width: 40vw;
+        position: relative;
+        left: 29vw; /* Changed from 19em to vw */
+    }
+
+    .message-inspiring {
+        position: relative;
+        font-size: 12px; /* Kept as px for font size */
+    }
+
+    .container-about {
+        margin-top: 50px; /* Kept as px for margin */
+        justify-content: left;
+        display: flex;
+    }
+
+    .box-code {
+        margin-bottom: 20px; /* Kept as px for margin */
+    }
+
+    .message-inspiring{
+        font-size: 10px;
+    }
+
+    #course {
+        position: relative;
+        top:17vh; /* Changed from 10em to vh */
+    }
+
+#gallery {
+    margin-top: 120vh; /* Adjusted for a better scroll position */
+}
+
+.container-gallery {
+    left: 4vw;
+    top: 5em; /* Adjusted for better spacing */
+    width: 95%; 
+    position: relative;
+    display: grid; /* Grid layout for image alignment */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap:30px; /* Consistent spacing between images */
+    padding: 20px; /* Padding around the gallery */
+}
+
+.img-zoom img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Fit image to container */
+    margin: 0;
+    padding: 0;
+    object-fit: cover; /* Ensure images are cropped consistently */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.size-img {
+    display: grid;
+    gap: 15px; /* Ensure consistent spacing */
+}
+
+    #myportfolio {
+        position: relative;
+        top: 55em; /* Kept as em for positioning */
+    }
+
+    #family {
+        margin-top: 38em; /* Kept as em for margin */
+    }
+
+    #contact {
+        margin-top: 20em; /* Kept as em for margin */
+    }
+}
+/* Tablets (768px to 1023px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+          /* Adjust styles for smaller laptop screens */
+
+    #portfolio {
+        flex-direction: column;
+        font-size: 34px;
+        left: 48vw; /* Changed from 12em to vw */
+        text-align: center;
+    }
+
+    #picture {
+        flex-direction: column;
+        left: 2vw; /* Changed from 2em to vw */
+        background: linear-gradient(to bottom, darkcyan, black);
+        width: 40vw; /* Changed from 25em to vw */
+        height: 45vh; /* Changed from 20em to vh */
+        border-top-right-radius: 4vw; /* Changed from 4em to vw */
+        border-top-left-radius: 20vw; /* Changed from 20em to vw */
+        border-bottom-right-radius: 10vw; /* Changed from 10em to vw */
+        border-bottom-left-radius: 30vw; /* Changed from 30em to vw */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    }
+
+    #imgProfile {
+        left: 10vw; /* Changed from 8em to vw */
+        width: 20vw; /* Changed from 20em to vw */
+        height: 44vh; /* Changed from 24em to vh */
+        bottom:15vw;
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    .buttons {
+        /* Add styles if needed */
+    }
+
+    #button {
+        position: relative;
+        left: 28vw; /* Changed from 24em to vw */
+        margin-top: 20vh; /* Changed from 100px to vh */
+        width: 20vw; /* Changed from 200px to vw */
+        text-align: center;
+        justify-content: center;
+    }
+
+    #wrap {
+        flex-wrap: wrap;
+        font-size: 20px;
+        left: 47vw; /* Changed from 25em to vw */
+        width: 45vw; /* Changed from 20em to vh */
+        bottom:63vh;
+    }
+
+    #item {
+        left: 45vw; /* Changed from 30em to vw */
+        margin: 0px 5px;
+        height: 8em; /* Kept as em for height */
+        width: 8em; /* Kept as em for width */
+        top: 58vh; /* Changed from 18em to vh */
+    }
+
+    #item .img-home {
+        display: inline-grid;
+        width: 10vw; /* Changed from 8em to vw */
+        border-radius: 1em; /* Kept as em for border radius */
+        text-transform: uppercase;
+        left:20px; /* Kept as px for positioning */
+        top: 10px; /* Kept as px for positioning */
+        height: 13vw; /* Kept as px for height */
+        position: relative;
+    }
+
+    /* About */
+    #about {
+        margin-top: 5em; /* Kept as em for margin */
+    }
+
+    #about .img-about {
+        flex-direction: column;
+        height: 42vh;
+        width: 40vw;
+        position: relative;
+        left: 0vw; /* Changed from 19em to vw */
+    }
+
+    .message-inspiring {
+        position: relative;
+        font-size: 12px; /* Kept as px for font size */
+    }
+
+    .container-about {
+        margin-top: 50px; /* Kept as px for margin */
+        justify-content: left;
+        display: flex;
+    }
+
+    .box-code {
+        margin-bottom: 20px; /* Kept as px for margin */
+    }
+
+    #course {
+        position: relative;
+        top: 60vh; /* Changed from 10em to vh */
+    }
+
+#gallery {
+    margin-top:540vh; /* Adjusted for a better scroll position */
+}
+
+.img-zoom img {
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Fit image to container */
+    margin: 0;
+    padding: 0;
+    object-fit: cover; /* Ensure images are cropped consistently */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+    #myportfolio {
+        position: relative;
+        top: 300vw; /* Kept as em for positioning */
+    }
+
+    #family {
+        margin-top: 100em; /* Kept as em for margin */
+    }
+
+    #contact {
+        margin-top: 120vw; /* Kept as em for margin */
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+.burger-icon {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px; /* Keep the icon on the left */
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    color: white;
+    padding: 10px;
+}
+
+#navigation {
+    position: fixed; /* Stay fixed */
+    top: 0;
+    left: -100%; /* Start off-screen */
+    height: 100%; /* Full page height */
+    width: 100%; /* Full page width */
+    background-color: black;
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto; /* Scrollable if content overflows */
+    transition: left 0.3s ease-in-out; /* Smooth slide-in transition */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#navigation.active {
+    left: 0; /* Bring it fully into view */
+}
+
+#navigation li {
+    list-style: none; /* Remove bullet points */
+    margin: 15px 0; /* Add vertical spacing between items */
+}
+
+#navigation li a {
+    font-size: 20px;
+    color: darkcyan; /* Change text color to darkcyan */
+    text-decoration: none;
+    text-transform: uppercase; /* Optional: Make text uppercase for consistency */
+    letter-spacing: 1px; /* Add slight spacing between letters for a cleaner look */
+}
+
+#navigation li a:hover {
+    color: #f39c12; /* Optional hover effect */
+}
+    #portfolio {
+        flex-direction: column;
+        font-size: 25px;
+        left: 15vw; /* Changed from 12em to vw */
+        text-align: center;
+        top:5vh;
+    }
+
+    #picture {
+        flex-direction: column;
+        top:20vh;
+        left: 7vw; /* Changed from 2em to vw */
+        background: linear-gradient(to bottom, darkcyan, black);
+        width: 280px; /* Changed from 25em to vw */
+        height: 25vh; /* Changed from 20em to vh */
+        border-top-right-radius: 4vw; /* Changed from 4em to vw */
+        border-top-left-radius: 20vw; /* Changed from 20em to vw */
+        border-bottom-right-radius: 10vw; /* Changed from 10em to vw */
+        border-bottom-left-radius: 30vw; /* Changed from 30em to vw */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    }
+
+    #imgProfile {
+        display: block;
+        left: 16vw; /* Changed from 8em to vw */
+        width: 20em; /* Changed from 20em to vw */
+        height: 20em; /* Changed from 24em to vh */
+        bottom:39vw;
+    }
+
+    #home {
+        height: 140vh;
+    }
+
+    .buttons {
+        /* Add styles if needed */
+    }
+
+    #button {
+        position: relative;
+        left: 1vw; /* Changed from 24em to vw */
+        margin-top: 80vh; /* Changed from 100px to vh */
+        width: 40vw; /* Changed from 200px to vw */
+        text-align: center;
+        justify-content: center;
+    }
+
+    #wrap {
+        flex-wrap: wrap;
+        font-size: 18px;
+        left: 10vw; /* Changed from 25em to vw */
+        width: 90%; /* Changed from 20em to vh */
+        bottom:65vh;
+    }
+
+    #item {
+        left: 3vw; /* Changed from 30em to vw */
+        margin: 0px 5px;
+        height: 30vw; /* Kept as em for height */
+        width: 28vw; /* Kept as em for width */
+        top: 92vh; /* Changed from 18em to vh */
+    }
+
+    #item .img-home {
+        display: inline-grid;
+        width: 20vw; /* Changed from 8em to vw */
+        border-radius: 1em; /* Kept as em for border radius */
+        text-transform: uppercase;
+        left:8px; /* Kept as px for positioning */
+        top: 6px; /* Kept as px for positioning */
+        height: 25vw; /* Kept as px for height */
+        position: relative;
+    }
+
+    /* About */
+    #about {
+        margin-top: 5em; /* Kept as em for margin */
+    }
+
+    #about .img-about {
+        left:1vw;
+        flex-direction: column;
+        height: 42vh;
+        width: 80vw;
+        position: relative;
+ /* Changed from 19em to vw */
+    }
+
+    #gallery{
+        margin-top: 348em;
+    }
+
+    .message-inspiring {
+        position: relative;
+        font-size: 12px; /* Kept as px for font size */
+    }
+
+    .container-about {
+        margin-top: 50px; /* Kept as px for margin */
+        justify-content: left;
+        display: flex;
+    }
+
+    .box-code {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    #course {
+        position: relative;
+        top: 120vh; /* Changed from 10em to vh */
+    }
+
+
+.container-gallery {
+/*    left: 4vw;
+    top: 5em; /* Adjusted for better spacing */
+    width: 95%; 
+    position: relative;
+    display: grid; /* Grid layout for image alignment */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap:30px; /* Consistent spacing between images */
+    padding: 20px; /* Padding around the gallery */*/
+
+}
+
+.img-zoom img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Fit image to container */
+    margin: 0;
+    padding: 0;
+    object-fit: cover; /* Ensure images are cropped consistently */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.subtitle{
+    width: 90%;
+    text-align: center;
+    left: 1vw;
+}
+
+.contact-left{
+    position: relative;
+
+}
+.size-img {
+    display: grid;
+    gap: 1px; /* Ensure consistent spacing */
+}
+
+
+    #myportfolio {
+        position: relative;
+        top: 330vh; /* Kept as em for positioning */
+    }
+
+    #family {
+        margin-top: 100em; /* Kept as em for margin */
+    }
+
+    #contact {
+        margin-top: 330vw; /* Kept as em for margin */
+    }
+
+    .contact-right{
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+
+}
+
+
+
+/*End of Home*/
+
+#about h1{
+        text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+	display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+
+.container-about {
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 800px;
+    padding: 1em; /* Add padding to prevent content from hitting the edges */
+    box-sizing: border-box; /* Include padding in layout calculations */
+}
+
+/* Media Query for Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .container-about {
+        gap: 3em;  /* Reduce the gap for tablets */
+    }
+}
+
+/* Media Query for Mobile (768px and below) */
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column;  /* Stack items vertically on mobile */
+        gap: 2em;  /* Reduce gap for smaller screens */
+        min-height: auto;  /* Let the container height adjust dynamically */
+        padding: 0.5em;  /* Reduce padding for smaller screens */
+    }
+}
+.img-about {
+    height: 40em;
+    width: 25em;
+    border-radius: 2%;
+    position: relative;
+    left: 1em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.message-inspiring {
+    width: 69%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+    background: linear-gradient(to bottom,darkcyan, black);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em; /* Add padding inside the container */
+    box-sizing: border-box; /* Include padding in layout calculations */
+    flex-grow: 1; /* Allow it to grow within the container */
+    min-width: 300px; /* Ensure it doesn't shrink too small */
+}
+
+.message-inspiring p {
+    height: auto; /* Allow the height to adjust based on content */
+    font-size: 1.5em; /* Adjust font size to prevent overflow */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; /* Remove default margins */
+    line-height: 1.5em; /* Adjust line spacing for readability */
+    font-family: 
+    "Castoro Titling", serif;
+}
+
+/*End at about*/
+
+/*Skills Start*/
+
+#course h1{
+    display: flex;
+        text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+		display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+.skills-container{
+    top:5em;
+    position: relative;
+	justify-content: center;
+	left: 10px;
+	height: 905px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+}
+
+.box-code{
+    gap:1em;
+	border: 1px solid;
+	height: 250px;
+	width: 32%;
+	justify-items: center;
+	border-radius: 10px;
+	background: linear-gradient(to bottom,darkcyan, black);
+	     transition: transform 0.5s ease-out, box-shadow 0.5s ease; /* Smooth zoom and shadow */
+             flex-direction: column;  /* Align content vertically */
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+}
+
+@media (max-width: 1024px) {
+    .box-code {
+        width: 45%;  /* Adjust width for tablets */
+        margin: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-code {
+        width: 90%;  /* Adjust width for mobile */
+           margin: 1em;
+    }
+}
+
+.box-code:hover {
+    transform: translateY(-5px) scale(1.0); /* Move upward by 10px */
+    border: 1px solid green;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 1); /* Change shadow to green */
+}
+
+.center-img{
+	position: relative;
+	display: flex;
+	top:1em;
+	width: 5em;
+	height: 5em;
+	border-radius: 10px;
+}
+
+.center-p{
+    font-family: "Castoro Titling", serif;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+	top:2.2em;
+	flex-wrap: wrap;
+	color: white;
+}
+/*Skills End*/
+/*Start Portolio*/
+
+#myportfolio h1{
+    display: flex;
+    text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+		display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+.container-portfolio{
+	top:1em;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	gap: 30px;
+		flex-wrap: wrap;
+	height: 900px;
+}
+
+#myportfolio{
+    margin-top: 10vh;
+}
+
+.box-portfolio{
+    display: grid;
+    border: 1px solid;
+    height: 550px;
+    width: 22%;
+    margin: 10px;  /* Add spacing between boxes */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, darkcyan, black);
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease; /* Smooth zoom and shadow */
+    justify-items: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    padding: 20px;  /* Add padding inside the box for content spacing */    
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .box-portfolio {
+        width: 45%;  /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .box-portfolio {
+        width: 90%;  /* Adjust width for mobile */
+    }
+}
+
+.box-portfolio:hover {
+    transform: translateY(-5px) scale(1.0); /* Move upward by 10px */
+    border: 1px solid green;
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 1); /* Change shadow to green */
+}
+
+.center-pfolio{
+    border: 1px solid;
+    height: 350px;
+    width: 95%;
+    top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden;
+}
+
+.portImage {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    max-height: 100%; /* Ensure the image does not exceed the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 0.3s ease; /* Animation for zooming */
+}
+
+.center-pfolio:hover .portImage {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.center-workmes{
+    font-family: "Castoro Titling", serif;
+		font-size: 12px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+	top:1.2em;
+	flex-wrap: wrap;
+	color: white;
+}
+/*End portfolio*/
+
+/*Gallery Start*/
+/* Gallery Start */
+#gallery{
+    position: relative;
+    top:10em;
+}
+
+#gallery h1{
+        text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+	top:3em;
+	position: relative;
+	display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+
+
+.container-gallery {
+    top: 10em;
+    position: relative;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    column-gap: 23em; /* Space between grid items */
+    padding: 20px; /* Add some padding */
+}
+
+.img-zoom {
+		text-decoration: none;
+    
+    height: 350px; /* Set a fixed height for images */
+    width: 20vw; /* Make image fill the container */
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* Ensure positioning context for child elements */
+}
+
+.img-zoom img {
+
+    width: 100%; /* Make image fill the container */
+    height: 300px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.img-zoom:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+/*Gallery End*/
+
+/*Family Start*/
+
+#family{
+    position: relative;
+    top:10em;
+}
+
+
+#family h1{
+        text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+	display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+
+.container-family{
+	top:6em;
+	position: relative;
+	justify-content: space-evenly;
+	display: flex;
+	gap: 30px;
+		flex-wrap: wrap;
+	height: 900px;
+}
+
+
+.family-box{
+	border:1px solid black;
+	width: 100%;
+	height: 40vh;
+}
+/*Family End*/
+
+/*Start Contact*/
+
+#contact{
+    position: relative;
+    top:5em;
+}
+.contact-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+	.subtitle{
+            text-transform: uppercase;
+    text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+		font-size: 44px;
+		justify-content: center;
+		display: flex;
+	}
+
+	.contact-left{
+		flex-basis: 35%;
+	}
+
+	.contact-right{
+		flex-basis: 60%;
+	}
+
+	.contact-left p{
+		margin-top: 30px;
+	}
+
+	.contact-left p i{
+		color: #ff004f;
+		margin-right: 15px;
+		font-size: 24px;
+	}
+
+	.social-icons{
+		margin-top: 30px;
+	}
+
+	.social-icons a{
+		text-decoration: none;
+		font-size: 30px;
+		margin-right: 15px;
+		color: #ff004f;
+		display: inline-block;
+		transition: transform 0.5s;
+	}
+
+.social-icons a:hover{
+	color:ff004f;
+	transform: translateY(-5px);
+}
+
+.btn{
+	display: inline-block;
+	background: ff004f;
+}
+
+.contact-right form{
+	position: relative;
+	width: 70vw;
+}
+
+form{
+	border-radius: 10px;
+	background: dimgray;
+	display: inline-block;
+	top:1em;
+	position: relative;
+	padding: 15px;
+}
+
+form input, form textarea{
+	width: 100%;
+	border:0 ;
+	outline: none;
+	background: #262626;
+	padding: 15px;
+	margin: 15px 0;
+	color: #ffff;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+form input:hover, form textarea:hover{
+border: 1px solid white;
+}
+
+.submit{
+	color: #ffff;
+	padding: 15px;
+	border-radius: 10px;
+	width: 100%;
+	font-size: 24px;
+	font-weight: 700;
+	background: #262626;
+    display: block;
+}
+
+.submit:hover{
+	border: 1px solid white;
+}
+/*End Contact*/
+	#copyright{
+            text-shadow: 0 1px 10px green;
+    font-family: "Red Hat Text", serif;
+        font-family: "Castoro Titling", serif;
+		text-align: center;
+		text-transform: capitalize;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		bottom:5em;
+		position: relative;
+	}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+
+    /* Adjust styles for smaller laptop screens */
+}
+
+/* Tablets (768px to 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+}
+
+/* Phones (320px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+}
