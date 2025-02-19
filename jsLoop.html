@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript For Loops And Conditional</title>
+    <style>
+        * {
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 100%;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        h4 {
+            font-size: 1em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        #simple-calculator-title {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+
+            &:hover {
+                background-color: rgb(61, 172, 61);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creating a JS Loops And Conditional</h1>
+    <h4>What your name? <br> I'm <u><a href="https://www.facebook.com/benedick.guile.belisano"
+                style="color:green; font-family:sans-serif;">Benedick Guile V. Belisano</a></u>
+        <br>What your course? <br> Bachelor of Science in Information Technology.
+    </h4>
+
+    <form class="container" id="loopme">
+        <label for="number1">Enter a Number</label>
+        <input type="number" id='numbers' required/>
+        <input type="submit" class="button" id="clickme"/>
+        <p id="result">Result </p>
+    </form>
+
+    <script src="jsLoops.js"></script>
+
+</body>
+
+</html>
