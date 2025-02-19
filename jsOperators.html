@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operator</title>
+    <style>
+        * {
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 100%;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        #simple-calculator-title {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+
+            &:hover {
+                background-color: rgb(61, 172, 61);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creating a JS Operator Function</h1>
+    <h4>What your name? <br> I'm <u style="color:green; font-family:sans-serif;">Benedick Guile V. Belisano</u>
+        <br>What your course? <br> Bachelor of Science in Information Technology.
+    </h4>
+    <div>
+        <h1 id="simple-calculator-title">Simple Calculator</h1>
+        <form class="container" id="calculator">
+            <label for="first-number">First Number</label>
+            <input type=number placeholder="0" id='first' required/>
+
+            <label for="second-number">Second Number</label>
+            <input type=number placeholder="0" id='second' required/>
+            
+            <label for="operator">Operator</label>
+            <input type=text placeholder="*, +, -, /" id='op' required/>
+            
+            <input type="submit" class="button" value="Submit"/>
+        </form>
+    </div>
+    <script src="jsOperator.js"></script>
+</body>
+
+</html>
