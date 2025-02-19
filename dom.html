@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <style>
+        * {
+            padding: 0;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+        h4,
+        #message {
+            font-size: 2em;
+            text-align: center;
+            font-family: Verdana;
+        }
+
+
+        #changeBtn {
+            font-size: 2em;
+            padding: 20px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: block;
+
+            &:hover {
+                background-color: rgb(61, 172, 61);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creating a DOM Manipulation</h1>
+    <h4>What your name? <br> I'm <u><a href="https://www.facebook.com/benedick.guile.belisano"
+                style="color:green; font-family:sans-serif;" id="name">Anonymous</a></u>
+        <br>What your course? <br>
+        <p id="course"> Secret</p>
+    </h4>
+
+    <p id="message">Don't Click Me 🥺 </p>
+
+    <button id='changeBtn' onclick="changeText()"> Click Me ⚠️ </button>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText = "WELL PLAYED!😇";
+            document.getElementById("name").innerText = "Benedick Guile V. Belisano";
+            document.getElementById("course").innerText = "Bachelor of Science in Information Technology.";
+        }
+    </script>
+</body>
+
+</html>
